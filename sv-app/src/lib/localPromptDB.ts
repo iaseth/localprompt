@@ -23,6 +23,10 @@ export interface Prompt {
 	isHidden: boolean;
 }
 
+export type PromptBooleanKey = keyof Pick<
+	Prompt, 'isNsfw' | 'isFavorite' | 'isHidden'
+>
+
 const DB_NAME = 'LocalPromptDB';
 const STORE_NAME = 'prompts';
 const DB_VERSION = 1;
@@ -73,7 +77,7 @@ export function getEmptyPrompt(): Prompt {
 }
 
 export async function addPrompt(prompt: Prompt): Promise<void> {
-	prompt = JSON.parse(JSON.stringify(prompt));
+	prompt = { ...prompt };
 	const now = Date.now();
 	prompt.createdAt = now;
 	prompt.updatedAt = now;
@@ -180,9 +184,7 @@ async function updatePrompt(prompt: Prompt): Promise<void> {
 	db.close();
 }
 
-export async function toggleProp(uuid: string, prop: keyof Pick<
-	Prompt, 'isFavorite' | 'isHidden'
->): Promise<void> {
+export async function toggleProp(uuid: string, prop: PromptBooleanKey): Promise<void> {
 	const prompt = await getPrompt(uuid);
 	if (!prompt) return;
 
