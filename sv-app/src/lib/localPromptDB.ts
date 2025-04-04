@@ -100,7 +100,7 @@ export const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
 export async function addPrompt(prompt: Prompt): Promise<void> {
 	prompt = { ...prompt };
 	const now = Date.now();
-	prompt.createdAt = now;
+	prompt.createdAt = prompt.createdAt || now;
 	prompt.updatedAt = now;
 
 	const db = await openDB();
