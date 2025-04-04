@@ -1,45 +1,20 @@
 
 <script lang="ts">
-	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey } from "$lib";
-	import ToggleField from "../components/ToggleField.svelte";
+	import PromptEditor from "../components/PromptEditor.svelte";
 
-	let prompt: Prompt = $state(getEmptyPrompt());
-
-	function printObject () {
-		console.log({...prompt});
-	}
-
-	function onclick () {
-		console.log(`Adding prompt ${prompt.uuid} to db.`);
-		addPrompt(prompt).then(() => {
-			prompt = getEmptyPrompt();
-		});
-	}
+	let showEditor = $state(false);
+	const toggleEditor = () => showEditor = !showEditor;
 </script>
 
 <section class="min-h-screen py-12 px-4">
-	<section class="max-w-3xl m-auto bg-zinc-950 px-4 py-6 rounded-md shadow">
-		<header class="py-4">
-			<h4 class="text-center">Add Prompt</h4>
-		</header>
+	<button class="btn btn-primary" onclick={toggleEditor}>Add</button>
 
-		<section class="space-y-6">
-			<input class="input block w-full" type="text" bind:value={prompt.title} />
-			<textarea class="textarea block w-full" rows=10 bind:value={prompt.prompt}></textarea>
+	{#if showEditor}
 
-			<fieldset class="fieldset grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-4 bg-base-100 border border-base-300 rounded-box">
-				<legend class="fieldset-legend">Toggles</legend>
-
-				{#each Checkboxes as { label, prop } }
-					<ToggleField label={label} value={prompt[prop]} onchange={() => prompt[prop] = !prompt[prop]} />
-				{/each}
-
-			</fieldset>
-
-			<footer class="flex gap-3">
-				<button {onclick} class="btn btn-primary">Add</button>
-				<button onclick={printObject} class="btn">Print</button>
-			</footer>
+		<section class="fixed top-0 left-0 w-full h-full overflow-y-scroll bg-zinc-900/75">
+			<section class="md:px-6 md:py-16 w-full">
+				<PromptEditor />
+			</section>
 		</section>
-	</section>
+	{/if}
 </section>
