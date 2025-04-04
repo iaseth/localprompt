@@ -15,8 +15,8 @@ export interface Prompt {
 
 	isForChatgpt: boolean;
 	isForClaude: boolean;
-	isForGemini: boolean;
 	isForDeepseek: boolean;
+	isForGemini: boolean;
 	isForGrok: boolean;
 
 	isFavorite: boolean;
@@ -24,7 +24,9 @@ export interface Prompt {
 }
 
 export type PromptBooleanKey = keyof Pick<
-	Prompt, 'isNsfw' | 'isFavorite' | 'isHidden'
+	Prompt, 'isForText' | 'isForImage' | 'isForVideo' | 'isNsfw'
+		| 'isForChatgpt' | 'isForClaude' | 'isForDeepseek' | 'isForGemini' | 'isForGrok'
+		| 'isFavorite' | 'isHidden'
 >
 
 const DB_NAME = 'LocalPromptDB';

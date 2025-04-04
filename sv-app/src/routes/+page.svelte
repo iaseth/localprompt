@@ -6,9 +6,19 @@
 	let prompt: Prompt = $state(getEmptyPrompt());
 
 	const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
+		{ label: 'Text', prop: 'isForText' },
+		{ label: 'Image', prop: 'isForImage' },
+		{ label: 'Video', prop: 'isForVideo' },
+		{ label: 'NSFW', prop: 'isNsfw' },
+
+		{ label: 'ChatGPT', prop: 'isForChatgpt' },
+		{ label: 'Claude', prop: 'isForClaude' },
+		{ label: 'Deepseek', prop: 'isForDeepseek' },
+		{ label: 'Gemini', prop: 'isForGemini' },
+		{ label: 'Grok', prop: 'isForGrok' },
+
 		{ label: 'Hidden', prop: 'isHidden' },
 		{ label: 'Favorite', prop: 'isFavorite' },
-		{ label: 'NSFW', prop: 'isNsfw' },
 	];
 
 	function printObject () {
