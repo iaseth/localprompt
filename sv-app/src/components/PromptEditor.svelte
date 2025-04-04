@@ -6,9 +6,9 @@
 
 	interface Props {
 		uuid?: string,
-		onclose: () => void
+		closeEditor: (updated?: boolean) => void
 	}
-	const { uuid, onclose }: Props = $props();
+	const { uuid, closeEditor }: Props = $props();
 
 	let prompt: Prompt = $state(getEmptyPrompt());
 	let promptExists = $derived(prompt.createdAt != 0);
@@ -32,9 +32,11 @@
 		}
 
 		addPrompt(prompt).then(() => {
-			onclose();
+			closeEditor(true);
 		});
 	}
+
+	const onCancel = () => closeEditor(false);
 </script>
 
 <section class="prose prose-xl mx-auto bg-zinc-950 px-3 sm:px-6 pt-2 pb-8 rounded-md shadow">
@@ -57,7 +59,7 @@
 
 		<footer class="flex gap-3">
 			<button {onclick} class="btn btn-primary">{promptExists ? 'Update' : 'Add'}</button>
-			<button onclick={onclose} class="btn">Cancel</button>
+			<button onclick={onCancel} class="btn">Cancel</button>
 
 			<Debug>
 				<button onclick={printObject} class="btn">Print</button>

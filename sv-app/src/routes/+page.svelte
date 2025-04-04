@@ -6,10 +6,20 @@
 
 	let uuid = $state('');
 	let showEditor = $state(false);
-	const toggleEditor = () => showEditor = !showEditor;
+	const openEditor = () => showEditor = true;
+	const closeEditor = (updated?: boolean) => {
+		showEditor = false;
+		if (updated) {
+			loadPrompts();
+		}
+	};
+	const addPrompt = () => {
+		uuid = '';
+		openEditor();
+	};
 	const editPrompt = (uuidX: string) => {
 		uuid = uuidX;
-		showEditor = true;
+		openEditor();
 	};
 
 	let prompts: Prompt[] = $state([]);
@@ -17,7 +27,8 @@
 	const fromSundayTimestamp = getLastSundayTimestamp();
 
 	function loadPrompts () {
-		getPromptsInRange(fromSundayTimestamp, toTimestamp).then(matchingPrompts => {
+		const to = getCurrentTimestamp();
+		getPromptsInRange(fromSundayTimestamp, to).then(matchingPrompts => {
 			prompts = matchingPrompts.sort((a, b) => b.updatedAt - a.updatedAt);
 		});
 	}
@@ -28,7 +39,7 @@
 </svelte:head>
 
 <section class="min-h-screen max-w-5xl mx-auto py-12 px-4">
-	<button class="btn btn-primary" onclick={toggleEditor}>Add</button>
+	<button class="btn btn-primary" onclick={addPrompt}>Add</button>
 	<button class="btn btn-primary" onclick={loadPrompts}>Load</button>
 
 	<section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-6">
@@ -40,7 +51,7 @@
 	{#if showEditor}
 		<section class="fixed z-50 top-0 left-0 w-full h-full overflow-y-scroll bg-zinc-900/75">
 			<section class="md:px-6 md:py-16 w-full">
-				<PromptEditor {uuid} onclose={toggleEditor} />
+				<PromptEditor {uuid} {closeEditor} />
 			</section>
 		</section>
 	{/if}
