@@ -2,6 +2,12 @@
 <script lang="ts">
 	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey } from "$lib";
 	import ToggleField from "../components/ToggleField.svelte";
+	import Debug from "./Debug.svelte";
+
+	interface Props {
+		onclose: () => void
+	}
+	const { onclose }: Props = $props();
 
 	let prompt: Prompt = $state(getEmptyPrompt());
 
@@ -37,7 +43,11 @@
 
 		<footer class="flex gap-3">
 			<button {onclick} class="btn btn-primary">Add</button>
-			<button onclick={printObject} class="btn">Print</button>
+			<button onclick={onclose} class="btn">Cancel</button>
+
+			<Debug>
+				<button onclick={printObject} class="btn">Print</button>
+			</Debug>
 		</footer>
 	</section>
 </section>
