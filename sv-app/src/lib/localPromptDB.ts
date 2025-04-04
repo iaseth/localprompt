@@ -155,6 +155,8 @@ export async function getAllCreatedTimestamps(): Promise<number[]> {
 }
 
 export async function getPromptsInRange(from: number, to: number): Promise<Prompt[]> {
+	const t1 = Math.min(from, to);
+	const t2 = Math.max(from, to);
 	const db = await openDB();
 	const tx = db.transaction(STORE_NAME, 'readonly');
 	const store = tx.objectStore(STORE_NAME);
@@ -163,7 +165,7 @@ export async function getPromptsInRange(from: number, to: number): Promise<Promp
 	const prompts: Prompt[] = [];
 
 	await new Promise<void>((resolve, reject) => {
-		const range = IDBKeyRange.bound(from, to);
+		const range = IDBKeyRange.bound(t1, t2);
 		const request = index.openCursor(range);
 		request.onsuccess = () => {
 			const cursor = request.result;

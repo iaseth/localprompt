@@ -13,12 +13,12 @@
 	};
 
 	let prompts: Prompt[] = $state([]);
-	const nowTimestamp = getCurrentTimestamp();
-	const lastSundayTimestamp = getLastSundayTimestamp();
+	const toTimestamp = getCurrentTimestamp();
+	const fromSundayTimestamp = getLastSundayTimestamp();
 
 	function loadPrompts () {
-		getPromptsInRange(lastSundayTimestamp, nowTimestamp).then(matchingPrompts => {
-			prompts = matchingPrompts;
+		getPromptsInRange(fromSundayTimestamp, toTimestamp).then(matchingPrompts => {
+			prompts = matchingPrompts.sort((a, b) => b.updatedAt - a.updatedAt);
 		});
 	}
 </script>
