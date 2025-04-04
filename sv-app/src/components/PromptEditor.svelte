@@ -1,24 +1,38 @@
 
 <script lang="ts">
-	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey } from "$lib";
+	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey, getPrompt } from "$lib";
 	import ToggleField from "../components/ToggleField.svelte";
 	import Debug from "./Debug.svelte";
 
 	interface Props {
+		uuid?: string,
 		onclose: () => void
 	}
-	const { onclose }: Props = $props();
+	const { uuid, onclose }: Props = $props();
 
 	let prompt: Prompt = $state(getEmptyPrompt());
+	let promptExists = $derived(prompt.createdAt != 0);
+	if (uuid) {
+		getPrompt(uuid).then(promptFound => {
+			if (promptFound) {
+				prompt = promptFound;
+			}
+		})
+	}
 
 	function printObject () {
 		console.log({...prompt});
 	}
 
 	function onclick () {
-		console.log(`Adding prompt ${prompt.uuid} to db.`);
+		if (promptExists) {
+			console.log(`Updating prompt: '${prompt.uuid}'`);
+		} else {
+			console.log(`Adding prompt to db: '${prompt.uuid}'`);
+		}
+
 		addPrompt(prompt).then(() => {
-			prompt = getEmptyPrompt();
+			onclose();
 		});
 	}
 </script>
@@ -42,7 +56,7 @@
 		</fieldset>
 
 		<footer class="flex gap-3">
-			<button {onclick} class="btn btn-primary">Add</button>
+			<button {onclick} class="btn btn-primary">{promptExists ? 'Update' : 'Add'}</button>
 			<button onclick={onclose} class="btn">Cancel</button>
 
 			<Debug>
