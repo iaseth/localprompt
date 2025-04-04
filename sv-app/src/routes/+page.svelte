@@ -1,25 +1,9 @@
 
 <script lang="ts">
-	import { addPrompt, getEmptyPrompt, type Prompt, type PromptBooleanKey } from "$lib";
+	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey } from "$lib";
 	import ToggleField from "../components/ToggleField.svelte";
 
 	let prompt: Prompt = $state(getEmptyPrompt());
-
-	const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
-		{ label: 'Text', prop: 'isForText' },
-		{ label: 'Image', prop: 'isForImage' },
-		{ label: 'Video', prop: 'isForVideo' },
-		{ label: 'NSFW', prop: 'isNsfw' },
-
-		{ label: 'ChatGPT', prop: 'isForChatgpt' },
-		{ label: 'Claude', prop: 'isForClaude' },
-		{ label: 'Deepseek', prop: 'isForDeepseek' },
-		{ label: 'Gemini', prop: 'isForGemini' },
-		{ label: 'Grok', prop: 'isForGrok' },
-
-		{ label: 'Hidden', prop: 'isHidden' },
-		{ label: 'Favorite', prop: 'isFavorite' },
-	];
 
 	function printObject () {
 		console.log({...prompt});
@@ -43,7 +27,7 @@
 			<input class="input block w-full" type="text" bind:value={prompt.title} />
 			<textarea class="textarea block w-full" rows=10 bind:value={prompt.prompt}></textarea>
 
-			<fieldset class="fieldset grid sm:grid-cols-2 md:grid-cols-3 p-4 bg-base-100 border border-base-300 rounded-box">
+			<fieldset class="fieldset grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-4 bg-base-100 border border-base-300 rounded-box">
 				<legend class="fieldset-legend">Toggles</legend>
 
 				{#each Checkboxes as { label, prop } }

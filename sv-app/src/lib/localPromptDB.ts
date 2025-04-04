@@ -20,13 +20,14 @@ export interface Prompt {
 	isForGrok: boolean;
 
 	isFavorite: boolean;
+	isGoat: boolean;
 	isHidden: boolean;
 }
 
 export type PromptBooleanKey = keyof Pick<
 	Prompt, 'isForText' | 'isForImage' | 'isForVideo' | 'isNsfw'
 		| 'isForChatgpt' | 'isForClaude' | 'isForDeepseek' | 'isForGemini' | 'isForGrok'
-		| 'isFavorite' | 'isHidden'
+		| 'isFavorite' | 'isGoat' | 'isHidden'
 >
 
 const DB_NAME = 'LocalPromptDB';
@@ -68,15 +69,33 @@ export function getEmptyPrompt(): Prompt {
 
 		isForChatgpt: false,
 		isForClaude: false,
-		isForGemini: false,
 		isForDeepseek: false,
+		isForGemini: false,
 		isForGrok: false,
 
 		isFavorite: false,
+		isGoat: false,
 		isHidden: false
 	};
 	return prompt;
 }
+
+export const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
+	{ label: 'Text', prop: 'isForText' },
+	{ label: 'Image', prop: 'isForImage' },
+	{ label: 'Video', prop: 'isForVideo' },
+	{ label: 'NSFW', prop: 'isNsfw' },
+
+	{ label: 'ChatGPT', prop: 'isForChatgpt' },
+	{ label: 'Claude', prop: 'isForClaude' },
+	{ label: 'Deepseek', prop: 'isForDeepseek' },
+	{ label: 'Gemini', prop: 'isForGemini' },
+	{ label: 'Grok', prop: 'isForGrok' },
+
+	{ label: 'Favorite', prop: 'isFavorite' },
+	{ label: 'GOAT', prop: 'isGoat' },
+	{ label: 'Hidden', prop: 'isHidden' },
+];
 
 export async function addPrompt(prompt: Prompt): Promise<void> {
 	prompt = { ...prompt };
