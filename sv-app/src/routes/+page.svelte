@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePrompt } from "$lib";
+	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePrompt, getEmptyPrompt, addPromptToDB } from "$lib";
 	import PromptCard from "../components/PromptCard.svelte";
 	import PromptEditor from "../components/PromptEditor.svelte";
 
@@ -35,6 +35,39 @@
 			prompts = matchingPrompts.sort((a, b) => b.updatedAt - a.updatedAt);
 		});
 	}
+
+	interface ExamplePrompt {
+		title: string,
+		prompt: string,
+		timestamp: number,
+		isForText?: boolean,
+		isForCode?: boolean,
+		isForImage?: boolean,
+		isForVideo?: boolean,
+		isForAudio?: boolean
+	}
+	function populateExamplePrompts () {
+		fetch('data/json/example-prompts.json')
+			.then(res => res.json())
+			.then(async (examplePrompts: ExamplePrompt[]) => {
+			for (const examplePrompt of examplePrompts) {
+				let newPrompt = getEmptyPrompt();
+				newPrompt.title = examplePrompt.title;
+				newPrompt.prompt = examplePrompt.prompt;
+
+				newPrompt.createdAt = examplePrompt.timestamp;
+				newPrompt.updatedAt = examplePrompt.timestamp;
+
+				newPrompt.isForText = examplePrompt.isForText || false;
+				newPrompt.isForCode = examplePrompt.isForCode || false;
+				newPrompt.isForImage = examplePrompt.isForImage || false;
+				newPrompt.isForVideo = examplePrompt.isForVideo || false;
+				newPrompt.isForAudio = examplePrompt.isForAudio || false;
+
+				addPromptToDB(newPrompt);
+			}
+		});
+	}
 </script>
 
 <svelte:head>
@@ -48,9 +81,10 @@
 			<p>Never lose a prompt again!</p>
 		</header>
 
-		<section class="flex gap-3 py-6">
+		<section class="flex flex-wrap gap-3 py-6">
 			<button class="btn btn-primary" onclick={addPrompt}>Add</button>
 			<button class="btn btn-secondary" onclick={loadPrompts}>Load</button>
+			<button class="btn btn-secondary" onclick={populateExamplePrompts}>Populate</button>
 		</section>
 	</aside>
 

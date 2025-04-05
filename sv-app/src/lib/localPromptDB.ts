@@ -9,9 +9,10 @@ export interface Prompt {
 	prompt: string;
 
 	isForText: boolean;
+	isForCode: boolean;
 	isForImage: boolean;
 	isForVideo: boolean;
-	isNsfw: boolean;
+	isForAudio: boolean,
 
 	isForChatgpt: boolean;
 	isForClaude: boolean;
@@ -21,13 +22,14 @@ export interface Prompt {
 
 	isFavorite: boolean;
 	isGoat: boolean;
+	isNsfw: boolean;
 	isHidden: boolean;
 }
 
 export type PromptBooleanKey = keyof Pick<
-	Prompt, 'isForText' | 'isForImage' | 'isForVideo' | 'isNsfw'
+	Prompt, 'isForText' | 'isForCode' | 'isForImage' | 'isForVideo' | 'isForAudio'
 		| 'isForChatgpt' | 'isForClaude' | 'isForDeepseek' | 'isForGemini' | 'isForGrok'
-		| 'isFavorite' | 'isGoat' | 'isHidden'
+		| 'isFavorite' | 'isGoat' | 'isNsfw' | 'isHidden'
 >
 
 const DB_NAME = 'LocalPromptDB';
@@ -63,9 +65,10 @@ export function getEmptyPrompt(): Prompt {
 		updatedAt: 0,
 
 		isForText: false,
+		isForCode: false,
 		isForImage: false,
 		isForVideo: false,
-		isNsfw: false,
+		isForAudio: false,
 
 		isForChatgpt: false,
 		isForClaude: false,
@@ -75,6 +78,7 @@ export function getEmptyPrompt(): Prompt {
 
 		isFavorite: false,
 		isGoat: false,
+		isNsfw: false,
 		isHidden: false
 	};
 	return prompt;
@@ -82,9 +86,10 @@ export function getEmptyPrompt(): Prompt {
 
 export const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
 	{ label: 'Text', prop: 'isForText' },
+	{ label: 'Code', prop: 'isForCode' },
 	{ label: 'Image', prop: 'isForImage' },
 	{ label: 'Video', prop: 'isForVideo' },
-	{ label: 'NSFW', prop: 'isNsfw' },
+	{ label: 'Audio', prop: 'isForAudio' },
 
 	{ label: 'ChatGPT', prop: 'isForChatgpt' },
 	{ label: 'Claude', prop: 'isForClaude' },
@@ -94,10 +99,11 @@ export const Checkboxes: { label: string, prop: PromptBooleanKey }[] = [
 
 	{ label: 'Favorite', prop: 'isFavorite' },
 	{ label: 'GOAT', prop: 'isGoat' },
+	{ label: 'NSFW', prop: 'isNsfw' },
 	{ label: 'Hidden', prop: 'isHidden' },
 ];
 
-export async function addPrompt(prompt: Prompt): Promise<void> {
+export async function addPromptToDB(prompt: Prompt): Promise<void> {
 	prompt = { ...prompt };
 	const now = Date.now();
 	prompt.createdAt = prompt.createdAt || now;

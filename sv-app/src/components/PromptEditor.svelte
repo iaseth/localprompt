@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { addPrompt, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey, getPrompt } from "$lib";
+	import { addPromptToDB, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey, getPrompt } from "$lib";
 	import ToggleField from "../components/ToggleField.svelte";
 	import Debug from "./Debug.svelte";
 
@@ -31,7 +31,7 @@
 			console.log(`Adding prompt to db: '${prompt.uuid}'`);
 		}
 
-		addPrompt(prompt).then(() => {
+		addPromptToDB(prompt).then(() => {
 			closeEditor(true);
 		});
 	}
