@@ -1,4 +1,12 @@
 
 @import 'tailwindcss';
+
 @plugin "@tailwindcss/typography";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+	themes: cupcake --default, business --prefersdark, business;
+}
+
+.masonry {
+	grid-template-rows: masonry;
+}

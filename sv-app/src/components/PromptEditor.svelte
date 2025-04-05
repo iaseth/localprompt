@@ -39,7 +39,7 @@
 	const onCancel = () => closeEditor(false);
 </script>
 
-<section class="prose prose-lg mx-auto bg-base-100 px-3 sm:px-6 pt-2 pb-8 rounded-md shadow">
+<section class="prose prose-lg mx-auto bg-base-200 px-3 sm:px-6 pt-2 pb-8 rounded-md shadow">
 	<header class="pb-4">
 		<h4 class="text-center">Add Prompt</h4>
 	</header>
