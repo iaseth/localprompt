@@ -1,0 +1,1223 @@
+[
+	{
+		"title": "Write a Cozy Mystery Opening",
+		"prompt": "Write the opening scene of a cozy mystery novel set in a small New England town. The protagonist, a retired librarian, stumbles upon a mysterious clue in her garden.",
+		"timestamp": 1678910400000,
+		"isForText": true
+	},
+	{
+		"title": "Generate a React Todo App",
+		"prompt": "Create a simple React application that includes a todo list with add, delete, and complete functionalities. Use functional components and hooks.",
+		"timestamp": 1685232000000,
+		"isForCode": true
+	},
+	{
+		"title": "Fantasy Landscape Artwork",
+		"prompt": "Generate a high-resolution image of a mystical forest with glowing plants, ancient ruins, and a soft, ethereal light filtering through the trees.",
+		"timestamp": 1689475200000,
+		"isForImage": true
+	},
+	{
+		"title": "Voiceover for Tech Promo",
+		"prompt": "Generate a professional voiceover script and audio for a 30-second tech product commercial introducing a new AI-powered smart home assistant.",
+		"timestamp": 1695868800000,
+		"isForText": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Sci-Fi Short Story Prompt",
+		"prompt": "Write a short sci-fi story about a planet where time flows backward and explorers from Earth must adapt to its strange rules.",
+		"timestamp": 1664582400000,
+		"isForText": true
+	},
+	{
+		"title": "Sketch of a Cyberpunk City",
+		"prompt": "Create a detailed digital sketch of a futuristic cyberpunk city at night, featuring neon lights, flying cars, and dense urban sprawl.",
+		"timestamp": 1671667200000,
+		"isForImage": true
+	},
+	{
+		"title": "Python Script to Rename Files",
+		"prompt": "Write a Python script that recursively renames all files in a directory by replacing spaces with underscores and converting names to lowercase.",
+		"timestamp": 1680307200000,
+		"isForCode": true
+	},
+	{
+		"title": "AI-Generated Ambient Music",
+		"prompt": "Generate a 2-minute ambient music track inspired by the sounds of a rainy forest at night, suitable for meditation.",
+		"timestamp": 1692057600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Medieval Tavern Scene",
+		"prompt": "Describe a bustling medieval tavern full of colorful characters, roaring fireplaces, and the smell of roasted meats and mead.",
+		"timestamp": 1672444800000,
+		"isForText": true
+	},
+	{
+		"title": "3D Logo Animation",
+		"prompt": "Create a short 3D animation of a company logo forming from particles, accompanied by a futuristic sound effect and a black background.",
+		"timestamp": 1682899200000,
+		"isForVideo": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Eerie Horror Soundscape",
+		"prompt": "Generate a 1-minute horror soundscape with whispers, creaking wood, and distant thunder, designed to unsettle the listener.",
+		"timestamp": 1677024000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Write a Poem About AI",
+		"prompt": "Write a free-verse poem exploring the emotional relationship between a human and their lifelong AI companion.",
+		"timestamp": 1644883200000,
+		"isForText": true
+	},
+	{
+		"title": "Cinematic Trailer Script",
+		"prompt": "Write a cinematic voiceover script for a dramatic action movie trailer about a lone detective uncovering a government conspiracy.",
+		"timestamp": 1660176000000,
+		"isForText": true
+	},
+	{
+		"title": "Generate a Cartoon Avatar",
+		"prompt": "Create a colorful cartoon avatar of a young female astronaut with freckles, floating in space with a big smile and a thumbs-up.",
+		"timestamp": 1698710400000,
+		"isForImage": true
+	},
+	{
+		"title": "SQL Query for Monthly Sales",
+		"prompt": "Write an SQL query that returns total monthly sales grouped by month for the past year from a 'transactions' table.",
+		"timestamp": 1668297600000,
+		"isForCode": true
+	},
+	{
+		"title": "AI-Generated Workout Video",
+		"prompt": "Generate a fitness video demonstrating a 10-minute beginner-friendly home workout routine with voice instructions and music.",
+		"timestamp": 1703030400000,
+		"isForVideo": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Surreal Dreamscape Painting",
+		"prompt": "Generate an image of a surreal dreamscape with floating islands, melting clocks, and a pink sky filled with giant koi fish.",
+		"timestamp": 1687824000000,
+		"isForImage": true
+	},
+	{
+		"title": "Rust CLI for File Backup",
+		"prompt": "Create a command-line Rust application that allows users to back up a directory and optionally compress it using gzip.",
+		"timestamp": 1681689600000,
+		"isForCode": true
+	},
+	{
+		"title": "Short Fantasy Dialogue",
+		"prompt": "Write a short dialogue between a grumpy dwarf blacksmith and a young elf asking for a custom enchanted sword.",
+		"timestamp": 1673136000000,
+		"isForText": true
+	},
+	{
+		"title": "Dreamy Lofi Background Music",
+		"prompt": "Generate a 3-minute lo-fi music track with soft beats and mellow chords, perfect for studying or working late at night.",
+		"timestamp": 1707868800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Describe a Futuristic Tokyo",
+		"prompt": "Write a vivid description of Tokyo 100 years in the future, focusing on architecture, transportation, and daily life of its citizens.",
+		"timestamp": 1655078400000,
+		"isForText": true
+	},
+	{
+		"title": "JavaScript Snake Game",
+		"prompt": "Create a simple snake game using vanilla JavaScript, HTML, and CSS. The snake should grow when it eats and end the game on collision.",
+		"timestamp": 1662854400000,
+		"isForCode": true
+	},
+	{
+		"title": "Alien World Concept Art",
+		"prompt": "Generate concept art of a lush alien jungle with bioluminescent plants, strange creatures, and floating rock formations.",
+		"timestamp": 1701388800000,
+		"isForImage": true
+	},
+	{
+		"title": "Piano Melody in D Minor",
+		"prompt": "Generate a short 30-second piano melody in D minor that evokes a sense of longing and introspection.",
+		"timestamp": 1674604800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Intro Paragraph for Sci-Fi Novel",
+		"prompt": "Write the first paragraph of a science fiction novel where humanity lives in floating arcologies above a flooded Earth.",
+		"timestamp": 1652745600000,
+		"isForText": true
+	},
+	{
+		"title": "Animated Explainer Video Script",
+		"prompt": "Write a friendly and informative voiceover script for a 60-second animated explainer video about how blockchain works.",
+		"timestamp": 1680220800000,
+		"isForText": true
+	},
+	{
+		"title": "Digital Painting of a Vampire Queen",
+		"prompt": "Generate a digital painting of a regal vampire queen seated on a gothic throne, surrounded by red candles and shadows.",
+		"timestamp": 1706572800000,
+		"isForImage": true
+	},
+	{
+		"title": "Node.js API for Bookstore",
+		"prompt": "Write a simple REST API using Node.js and Express to manage books in a bookstore, with endpoints for CRUD operations.",
+		"timestamp": 1663459200000,
+		"isForCode": true
+	},
+	{
+		"title": "Fantasy Soundtrack Cue",
+		"prompt": "Generate a 45-second orchestral soundtrack cue for a fantasy battle scene, with swelling strings and tribal percussion.",
+		"timestamp": 1691712000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Time-Traveling Detective",
+		"prompt": "Write a character sketch of a detective who travels through time to solve crimes before they happen.",
+		"timestamp": 1648166400000,
+		"isForText": true
+	},
+	{
+		"title": "Isometric Pixel Art of City",
+		"prompt": "Generate an isometric pixel art image of a compact city block with tiny people, cars, cafes, and rooftop gardens.",
+		"timestamp": 1704240000000,
+		"isForImage": true
+	},
+	{
+		"title": "Python Data Cleaner",
+		"prompt": "Create a Python script that loads a CSV file, removes duplicates, fills missing values, and saves the cleaned version.",
+		"timestamp": 1670025600000,
+		"isForCode": true
+	},
+	{
+		"title": "Podcast Intro Voiceover",
+		"prompt": "Write and generate a voiceover for a 15-second podcast intro about tech news and trends, with a confident and upbeat tone.",
+		"timestamp": 1709078400000,
+		"isForText": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Cyberpunk Motorcycle Chase Video",
+		"prompt": "Generate a short animated video clip of a cyberpunk-style motorcycle chase through neon-lit city streets at night.",
+		"timestamp": 1695168000000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Procedural Dungeon Generator",
+		"prompt": "Write code in Python to procedurally generate random dungeon layouts for a roguelike game, using a grid-based approach.",
+		"timestamp": 1687996800000,
+		"isForCode": true
+	},
+	{
+		"title": "Dystopian Sound Collage",
+		"prompt": "Generate a 1-minute audio collage that conveys a dystopian mood using mechanical noises, static, and ambient hums.",
+		"timestamp": 1665792000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Children's Storybook Excerpt",
+		"prompt": "Write a short excerpt from a whimsical children's storybook about a curious raccoon who explores a magical forest.",
+		"timestamp": 1685923200000,
+		"isForText": true
+	},
+	{
+		"title": "Logo Animation with Swoosh Effect",
+		"prompt": "Create a 3-second animation where a logo swoops in with a whooshing sound and then sparkles before settling in the center.",
+		"timestamp": 1700784000000,
+		"isForVideo": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Linux Shell Script for Backup",
+		"prompt": "Write a bash shell script that creates a compressed backup of a given directory and logs the operation with timestamps.",
+		"timestamp": 1648857600000,
+		"isForCode": true
+	},
+	{
+		"title": "Paint a Samurai in the Rain",
+		"prompt": "Generate an image of a lone samurai standing on a misty mountain path in the rain, wearing traditional armor and holding a katana.",
+		"timestamp": 1684886400000,
+		"isForImage": true
+	},
+	{
+		"title": "Intro Scene for a Noir Detective Story",
+		"prompt": "Write the opening scene for a noir detective story set in 1940s Chicago. The detective arrives at a rain-soaked crime scene in a smoky alley.",
+		"timestamp": 1642032000000,
+		"isForText": true
+	},
+	{
+		"title": "Generate a Dark Synth Music Clip",
+		"prompt": "Generate a 30-second dark synthwave music clip inspired by retro-futuristic movies and analog synths.",
+		"timestamp": 1686873600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Space-Themed Loading Animation",
+		"prompt": "Create a short animated loading screen showing a spaceship flying through an asteroid field and charging energy.",
+		"timestamp": 1690675200000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Python Script to Monitor Website Uptime",
+		"prompt": "Write a Python script that checks whether a list of websites is up or down and logs the results to a file with timestamps.",
+		"timestamp": 1653436800000,
+		"isForCode": true
+	},
+	{
+		"title": "Mythical Creature Description",
+		"prompt": "Describe an original mythical creature that guards the entrance to a lost city hidden deep in the Himalayas.",
+		"timestamp": 1676246400000,
+		"isForText": true
+	},
+	{
+		"title": "Surreal Ocean World Artwork",
+		"prompt": "Generate an image of a surreal underwater world where sea creatures glow and coral reefs float in mid-water like jellyfish.",
+		"timestamp": 1702608000000,
+		"isForImage": true
+	},
+	{
+		"title": "Guitar Riff for Indie Rock Song",
+		"prompt": "Generate a 10-second guitar riff in an upbeat indie rock style, suitable for a song intro.",
+		"timestamp": 1660780800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Weather App UI in Flutter",
+		"prompt": "Write Flutter code for a minimalistic weather app that shows current temperature, location, and a five-day forecast.",
+		"timestamp": 1657497600000,
+		"isForCode": true
+	},
+	{
+		"title": "Script for Educational History Video",
+		"prompt": "Write a voiceover script for a 2-minute educational video explaining the causes of World War I in simple terms.",
+		"timestamp": 1678406400000,
+		"isForText": true
+	},
+	{
+		"title": "Cartoon of a Sleepy Owl",
+		"prompt": "Generate a cute cartoon illustration of a sleepy owl wearing glasses and clutching a cup of coffee on a tree branch.",
+		"timestamp": 1681430400000,
+		"isForImage": true
+	},
+	{
+		"title": "CLI Tool in Go for JSON Formatting",
+		"prompt": "Write a command-line Go program that formats and pretty-prints JSON input from a file or stdin.",
+		"timestamp": 1694736000000,
+		"isForCode": true
+	},
+	{
+		"title": "Cinematic Horror Trailer Audio",
+		"prompt": "Generate a chilling 45-second audio clip for a horror movie trailer, featuring deep drones, screeches, and heart-pounding rhythms.",
+		"timestamp": 1709683200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Opening Line of a Romance Novel",
+		"prompt": "Write a compelling first sentence for a romance novel where two strangers meet during a delayed flight.",
+		"timestamp": 1646265600000,
+		"isForText": true
+	},
+	{
+		"title": "Animated UI Microinteraction",
+		"prompt": "Generate an animation for a UI button that pulses subtly when hovered and bursts with color when clicked.",
+		"timestamp": 1697587200000,
+		"isForVideo": true
+	},
+	{
+		"title": "Medieval Village Isometric Art",
+		"prompt": "Generate an isometric-style image of a medieval village with cottages, a marketplace, and villagers going about daily life.",
+		"timestamp": 1700352000000,
+		"isForImage": true
+	},
+	{
+		"title": "Swift App to Track Habits",
+		"prompt": "Write Swift code for an iOS app that lets users track daily habits and visualize progress using charts.",
+		"timestamp": 1669939200000,
+		"isForCode": true
+	},
+	{
+		"title": "Alien Radio Transmission Audio",
+		"prompt": "Generate an eerie 20-second audio clip that simulates a mysterious alien radio transmission received on Earth.",
+		"timestamp": 1659744000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Short Satirical News Article",
+		"prompt": "Write a short satirical news article about a new government department created solely to manage internet memes.",
+		"timestamp": 1666396800000,
+		"isForText": true
+	},
+	{
+		"title": "Digital Portrait of a Time Traveler",
+		"prompt": "Create a digital portrait of a time traveler wearing a mix of futuristic tech gear and Victorian-era fashion.",
+		"timestamp": 1689984000000,
+		"isForImage": true
+	},
+	{
+		"title": "Java App to Simulate Elevator",
+		"prompt": "Write Java code for a console app that simulates an elevator system in a building with multiple floors and elevators.",
+		"timestamp": 1671580800000,
+		"isForCode": true
+	},
+	{
+		"title": "Short Horror Story in a Cabin",
+		"prompt": "Write a short horror story set in a remote mountain cabin during a snowstorm, where a traveler discovers they're not alone.",
+		"timestamp": 1643155200000,
+		"isForText": true
+	},
+	{
+		"title": "Generate Lofi Chill Beat",
+		"prompt": "Generate a 30-second lofi chillhop beat with soft drums, mellow piano chords, and vinyl crackle for background ambiance.",
+		"timestamp": 1704931200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Fantasy Battle Scene Video",
+		"prompt": "Create a short video clip of a fantasy battle between knights and dragons on a misty mountain battlefield.",
+		"timestamp": 1692835200000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Ruby Script to Rename Files",
+		"prompt": "Write a Ruby script that batch renames files in a directory based on a user-provided prefix and numeric index.",
+		"timestamp": 1663632000000,
+		"isForCode": true
+	},
+	{
+		"title": "Describe a Floating Island City",
+		"prompt": "Describe a fictional city built on floating islands, suspended in the sky by ancient magical crystals.",
+		"timestamp": 1675123200000,
+		"isForText": true
+	},
+	{
+		"title": "Cyberpunk Street Market Illustration",
+		"prompt": "Generate a detailed image of a neon-lit cyberpunk street market at night, with food stalls, holograms, and crowded alleyways.",
+		"timestamp": 1707004800000,
+		"isForImage": true
+	},
+	{
+		"title": "Electronic Sound for Game Menu",
+		"prompt": "Generate a futuristic electronic sound effect for opening a game menu in a sci-fi user interface.",
+		"timestamp": 1650585600000,
+		"isForAudio": true
+	},
+	{
+		"title": "React Component for Image Carousel",
+		"prompt": "Write a React component that implements a simple image carousel with next/prev arrows and auto-play.",
+		"timestamp": 1684368000000,
+		"isForCode": true
+	},
+	{
+		"title": "Documentary Voiceover Intro",
+		"prompt": "Write a professional-sounding introduction for a nature documentary exploring the world's most extreme environments.",
+		"timestamp": 1672185600000,
+		"isForText": true
+	},
+	{
+		"title": "Cartoon Fox in Space",
+		"prompt": "Generate a cartoon-style image of a cheerful fox wearing a space helmet, floating near a small planet.",
+		"timestamp": 1698796800000,
+		"isForImage": true
+	},
+	{
+		"title": "Shell Script to Sync Folders",
+		"prompt": "Write a bash shell script that syncs two local directories and logs the list of files updated or copied.",
+		"timestamp": 1658966400000,
+		"isForCode": true
+	},
+	{
+		"title": "Ambient Forest Sound Loop",
+		"prompt": "Generate a relaxing 1-minute audio loop of an ambient forest environment with birds, wind, and soft rustling leaves.",
+		"timestamp": 1701216000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Opening Paragraph of Thriller Novel",
+		"prompt": "Write the opening paragraph of a fast-paced thriller novel that begins with a mysterious phone call at 3 a.m.",
+		"timestamp": 1644537600000,
+		"isForText": true
+	},
+	{
+		"title": "Logo Reveal Video with Fire Particles",
+		"prompt": "Create a 5-second video animation where a logo appears dramatically with fire particle effects and rumble sound.",
+		"timestamp": 1691452800000,
+		"isForVideo": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Steampunk Inventor Portrait",
+		"prompt": "Generate a digital portrait of a steampunk inventor with goggles, brass gadgets, and a cluttered workshop in the background.",
+		"timestamp": 1680048000000,
+		"isForImage": true
+	},
+	{
+		"title": "JavaScript Maze Generator",
+		"prompt": "Write JavaScript code that randomly generates and renders a maze on an HTML canvas, with a start and end point.",
+		"timestamp": 1673568000000,
+		"isForCode": true
+	},
+	{
+		"title": "Sci-Fi User Interface SFX",
+		"prompt": "Generate sound effects for a sci-fi UI: one for opening a panel, one for toggling a setting, and one for error alert.",
+		"timestamp": 1657238400000,
+		"isForAudio": true
+	},
+	{
+		"title": "Write a Pirate’s Monologue",
+		"prompt": "Write a dramatic monologue from the perspective of an old pirate reflecting on their final voyage.",
+		"timestamp": 1649635200000,
+		"isForText": true
+	},
+	{
+		"title": "Low-Poly Fantasy Landscape",
+		"prompt": "Generate an image of a low-poly fantasy landscape with floating islands, waterfalls, and glowing crystals.",
+		"timestamp": 1704067200000,
+		"isForImage": true
+	},
+	{
+		"title": "C# App to Track Expenses",
+		"prompt": "Write a simple C# console application that lets users add, view, and delete expense entries with dates and categories.",
+		"timestamp": 1668902400000,
+		"isForCode": true
+	},
+	{
+		"title": "Opening Scene of a Post-Apocalyptic Novel",
+		"prompt": "Write the first scene of a novel set in a world where the oceans have dried up and humanity survives in underground cities.",
+		"timestamp": 1642204800000,
+		"isForText": true
+	},
+	{
+		"title": "Generate a Retro Arcade Tune",
+		"prompt": "Generate a short 8-bit retro arcade-style audio loop for a fast-paced platformer game.",
+		"timestamp": 1708300800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Underwater Research Facility Animation",
+		"prompt": "Create an animated video clip showing an underwater research facility with glowing lights and passing sea creatures.",
+		"timestamp": 1682553600000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "TypeScript Validator for User Input",
+		"prompt": "Write TypeScript code for validating user registration input including name, email, and password strength.",
+		"timestamp": 1670025600000,
+		"isForCode": true
+	},
+	{
+		"title": "Describe a Magical Library",
+		"prompt": "Describe a massive magical library hidden beneath a castle, filled with floating books, glowing scripts, and talking tomes.",
+		"timestamp": 1699315200000,
+		"isForText": true
+	},
+	{
+		"title": "Alien Desert Civilization Art",
+		"prompt": "Generate a concept art piece of an alien civilization living in massive structures built into desert canyon walls.",
+		"timestamp": 1700006400000,
+		"isForImage": true
+	},
+	{
+		"title": "Footstep Sounds on Different Surfaces",
+		"prompt": "Generate three different footstep audio clips: one on gravel, one on metal, and one on wet stone.",
+		"timestamp": 1651440000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Vue.js Dashboard with Chart.js",
+		"prompt": "Write Vue.js code for a dashboard that includes a bar chart, a line graph, and dynamic data updates using Chart.js.",
+		"timestamp": 1676764800000,
+		"isForCode": true
+	},
+	{
+		"title": "Sci-Fi Film Trailer Voiceover",
+		"prompt": "Write a dramatic voiceover script for a sci-fi film trailer about a war between AI and humans across galaxies.",
+		"timestamp": 1685145600000,
+		"isForText": true
+	},
+	{
+		"title": "Cute Frog Sitting on a Mushroom",
+		"prompt": "Generate a whimsical cartoon image of a smiling frog sitting on a spotted mushroom in a rainy forest.",
+		"timestamp": 1702593600000,
+		"isForImage": true
+	},
+	{
+		"title": "Rust CLI for File Compression",
+		"prompt": "Write a Rust command-line tool that compresses files using gzip and supports batch compression with progress output.",
+		"timestamp": 1690675200000,
+		"isForCode": true
+	},
+	{
+		"title": "Meditation Music for Sleep",
+		"prompt": "Generate a 1-minute calming ambient audio track for sleep meditation with soft tones and slow atmospheric swells.",
+		"timestamp": 1706745600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Fantasy Heist Short Story Intro",
+		"prompt": "Write the opening paragraph of a fantasy heist story where a rogue assembles a team to break into a wizard’s vault.",
+		"timestamp": 1646006400000,
+		"isForText": true
+	},
+	{
+		"title": "Particle Logo Reveal Video",
+		"prompt": "Create a 4-second logo reveal animation where the logo emerges from swirling digital particles with a chime sound.",
+		"timestamp": 1693440000000,
+		"isForVideo": true,
+		"isForAudio": true
+	},
+	{
+		"title": "Steampunk Submarine Interior Art",
+		"prompt": "Generate detailed concept art of a steampunk submarine's control room with brass dials, pressure gauges, and levers.",
+		"timestamp": 1682035200000,
+		"isForImage": true
+	},
+	{
+		"title": "C++ Game Loop Structure",
+		"prompt": "Write a simple C++ game loop structure that handles input, updates game state, and renders to the screen.",
+		"timestamp": 1656115200000,
+		"isForCode": true
+	},
+	{
+		"title": "Fantasy Ambience with Creatures",
+		"prompt": "Generate ambient audio for a fantasy forest filled with magical creatures, rustling leaves, and distant mysterious calls.",
+		"timestamp": 1665792000000,
+		"isForAudio": true
+	},
+	{
+		"title": "A Letter from the Future",
+		"prompt": "Write a heartfelt letter from someone living in the year 2125, reflecting on how the world has changed over a century.",
+		"timestamp": 1659916800000,
+		"isForText": true
+	},
+	{
+		"title": "Low-Poly Arctic Explorer Scene",
+		"prompt": "Generate a low-poly 3D-style image of an arctic explorer trekking across icy plains with a sled and huskies.",
+		"timestamp": 1704499200000,
+		"isForImage": true
+	},
+	{
+		"title": "Python Flask App for Notes",
+		"prompt": "Write Python Flask code for a simple note-taking web app with endpoints to add, list, and delete notes stored in memory.",
+		"timestamp": 1660953600000,
+		"isForCode": true
+	},
+	{
+		"title": "Write a Secret Message in a Children's Story",
+		"prompt": "Write the beginning of a children's bedtime story that secretly encodes a hidden message using the first letter of each sentence. The story should seem innocent and magical but reward attentive readers with a subtle cipher.",
+		"timestamp": 1653782400000,
+		"isForText": true
+	},
+	{
+		"title": "AI-Generated Choral Chant for a Cult",
+		"prompt": "Generate a 45-second eerie choral chant in a made-up language for an ancient cult in a fantasy world. The music should have layered harmonies, slow tempo, and invoke a feeling of reverence and fear.",
+		"timestamp": 1682553600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Short Film Scene: Time Freezes",
+		"prompt": "Create a short video script where time freezes mid-argument between two characters, and one of them walks around observing frozen people and thinking about what they’ll say next. Include camera direction and mood lighting.",
+		"timestamp": 1701475200000,
+		"isForText": true,
+		"isForVideo": true
+	},
+	{
+		"title": "Build a CLI Dungeon Crawler in Python",
+		"prompt": "Write a text-based dungeon crawler game in Python that runs in the terminal. Players should be able to explore rooms, pick up items, and fight randomly generated monsters. Add some ASCII art flair.",
+		"timestamp": 1660176000000,
+		"isForCode": true
+	},
+	{
+		"title": "Portrait of a Cyberpunk Samurai",
+		"prompt": "Generate a high-detail digital painting of a cyberpunk samurai with glowing tattoos, a neon katana, and a trench coat fluttering in the rain. The background should show a futuristic Tokyo skyline with holograms and smog.",
+		"timestamp": 1703980800000,
+		"isForImage": true
+	},
+	{
+		"title": "Sci-Fi UI Soundpack for Operating System",
+		"prompt": "Generate a soundpack for a futuristic operating system, including sounds for boot-up, shutting down, receiving notifications, and critical errors. The sounds should feel high-tech but pleasing and not jarring.",
+		"timestamp": 1688515200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Alien Negotiation Scene",
+		"prompt": "Write a tense dialogue-driven scene in which a human diplomat and an alien envoy negotiate peace after a decade-long war. Include subtle cultural misunderstandings and unspoken threats.",
+		"timestamp": 1643760000000,
+		"isForText": true
+	},
+	{
+		"title": "Glitched Renaissance Painting",
+		"prompt": "Create an image that blends a classic Renaissance painting style with digital glitches, pixel corruption, and augmented reality overlays. Imagine an old-world Madonna painting partially overwritten by futuristic technology.",
+		"timestamp": 1693708800000,
+		"isForImage": true
+	},
+	{
+		"title": "C++ Code for a Multithreaded Web Crawler",
+		"prompt": "Write C++ code for a basic multithreaded web crawler that downloads pages in parallel and stores URLs and metadata in a SQLite database. Include thread-safe queue handling and polite crawling behavior.",
+		"timestamp": 1706745600000,
+		"isForCode": true
+	},
+	{
+		"title": "Create an Underworld Ambience Loop",
+		"prompt": "Generate an ambient loop that could be used for a video game set in the underworld. Include sounds like low rumbling, distant screams, bubbling lava, and ethereal whispers.",
+		"timestamp": 1659484800000,
+		"isForAudio": true
+	},
+	{
+		"title": "A Love Letter Across Universes",
+		"prompt": "Write a poetic love letter from someone in a parallel universe trying to reach their soulmate in ours. Reference odd scientific phenomena, shimmering cracks in time, and memories that bleed between dimensions.",
+		"timestamp": 1674864000000,
+		"isForText": true
+	},
+	{
+		"title": "Animated Data Visualization of Planet Migration",
+		"prompt": "Create an animated video that visually explains planetary migration during the early solar system formation. Include labels, orbit paths, and slow zooms through the asteroid belt.",
+		"timestamp": 1687305600000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Augmented Reality App in Unity",
+		"prompt": "Write Unity C# code for an AR mobile app that overlays 3D historical landmarks on a real-time camera feed using GPS and compass direction. Include basic user interaction to tap and get info on the site.",
+		"timestamp": 1678665600000,
+		"isForCode": true
+	},
+	{
+		"title": "Map of a Lost Civilization",
+		"prompt": "Generate a highly detailed fantasy-style map showing the ruins of a lost jungle civilization, including pyramid temples, hidden caves, overgrown bridges, and mythical beasts in the corners.",
+		"timestamp": 1705104000000,
+		"isForImage": true
+	},
+	{
+		"title": "Singing AI Singing About Itself",
+		"prompt": "Create a short music clip where an AI sings about what it's like to generate music. Use synthetic vocals and a dreamy synth-pop melody.",
+		"timestamp": 1699228800000,
+		"isForAudio": true
+	},
+	{
+		"title": "A Hacker’s Manifesto in Slam Poetry",
+		"prompt": "Write a slam poetry piece in the voice of a rogue hacker broadcasting their manifesto to the world. Blend tech jargon with passionate calls for freedom, truth, and digital rebellion.",
+		"timestamp": 1647993600000,
+		"isForText": true
+	},
+	{
+		"title": "Glitchy Fantasy Creature Animation",
+		"prompt": "Create a short video animation of a magical creature that glitches and warps reality around it every few seconds. Include particle effects and subtle distortion filters.",
+		"timestamp": 1691971200000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "GoLang Code for Real-Time Chat Server",
+		"prompt": "Write GoLang code for a simple WebSocket-based real-time chat server. Include support for user nicknames, message broadcasting, and simple join/leave notifications.",
+		"timestamp": 1653523200000,
+		"isForCode": true
+	},
+	{
+		"title": "Generate a Loopable Dream Sequence Ambience",
+		"prompt": "Generate a 1-minute loopable ambient audio track that sounds like a dream sequence. Use reverb-heavy pads, reversed audio, and slow fades in and out.",
+		"timestamp": 1677283200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Describe a City That Exists Between Seconds",
+		"prompt": "Describe a city that exists in the infinitesimal slivers of time between seconds. Include how its people live, how they perceive time, and how outsiders might accidentally glimpse it.",
+		"timestamp": 1662076800000,
+		"isForText": true
+	},
+	{
+		"title": "Mythical Beast Field Guide Entry",
+		"prompt": "Write a field guide entry for a mythical creature called the 'Shardwurm'—a massive, subterranean dragon made of obsidian and crystal that thrives on seismic energy. Include its behavior, habitat, danger level, and known sightings.",
+		"timestamp": 1671753600000,
+		"isForText": true
+	},
+	{
+		"title": "Procedural Terrain Generator in Rust",
+		"prompt": "Write Rust code for a procedural terrain generator that outputs a 2D heightmap using Perlin noise. Include visualization using ASCII or basic plotting and allow seed input for reproducibility.",
+		"timestamp": 1703030400000,
+		"isForCode": true
+	},
+	{
+		"title": "Haunted Music Box Loop",
+		"prompt": "Generate an eerie, loopable audio clip of a haunted music box that slowly goes out of tune and reveals a whispering background layer over time.",
+		"timestamp": 1665187200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Apocalyptic Sky Landscape",
+		"prompt": "Generate a surreal image of a crimson sky over a burning desert wasteland, with fractured moons floating in the background and a single figure walking toward a crumbling monolith.",
+		"timestamp": 1695945600000,
+		"isForImage": true
+	},
+	{
+		"title": "A Speech by a Robot President",
+		"prompt": "Write a victory speech by the first robot president of Earth after being elected by a coalition of humans and AIs. Blend diplomatic language with flashes of robotic precision, and address both species.",
+		"timestamp": 1652054400000,
+		"isForText": true
+	},
+	{
+		"title": "Interactive Crime Board in React",
+		"prompt": "Create a React app that visualizes a crime investigation board. Users can drag notes, photos, and clues around, draw strings to connect them, and click items to open detailed profiles.",
+		"timestamp": 1686614400000,
+		"isForCode": true
+	},
+	{
+		"title": "Generate Alien Jungle Ambience",
+		"prompt": "Produce an ambient audio loop that sounds like a dense alien jungle at night—include unfamiliar insect-like sounds, echoing calls, and glowing plant pulses.",
+		"timestamp": 1705363200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Vaporwave Café Concept Art",
+		"prompt": "Generate a digital art piece of a vaporwave-themed café with neon lighting, Greek statues, soft pink-blue gradients, and lo-fi aesthetics playing on tube TVs.",
+		"timestamp": 1684713600000,
+		"isForImage": true
+	},
+	{
+		"title": "Conversation Between Two Forgotten Gods",
+		"prompt": "Write a dramatic scene where two ancient gods—long forgotten by mankind—meet in a collapsing temple and argue over who failed humanity first. Include poetic language and fading power.",
+		"timestamp": 1659312000000,
+		"isForText": true
+	},
+	{
+		"title": "Flying City Animation",
+		"prompt": "Create a short animation showing a flying city drifting through the clouds, powered by giant glowing crystals. Add floating ships coming and going, with a sunrise in the background.",
+		"timestamp": 1692403200000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Go-Based Microservice for Currency Conversion",
+		"prompt": "Write a Go microservice that fetches live currency exchange rates and exposes an API endpoint for converting between currencies. Include basic error handling and rate limiting.",
+		"timestamp": 1673136000000,
+		"isForCode": true
+	},
+	{
+		"title": "Cyber Forest Soundscape",
+		"prompt": "Generate a soundscape of a cybernetic forest where natural elements are fused with machines—think digital birdsongs, pulsing roots, and hissing steam vents.",
+		"timestamp": 1647216000000,
+		"isForAudio": true
+	},
+	{
+		"title": "A Letter Found in a Time Capsule",
+		"prompt": "Write a letter discovered inside a time capsule buried in the year 2025 and opened in 3025. Let it reflect on what the author hopes for the future and fears about the present.",
+		"timestamp": 1702166400000,
+		"isForText": true
+	},
+	{
+		"title": "Battle of Gods Pixel Art Style",
+		"prompt": "Generate an image of two ancient gods clashing in pixel art style, with lightning bolts, broken temples, and elemental energy effects flying across the screen.",
+		"timestamp": 1668470400000,
+		"isForImage": true
+	},
+	{
+		"title": "Horror Short Film Jump Scare Sequence",
+		"prompt": "Storyboard a short horror film jump scare scene inside an abandoned hospital. Include shot types, pacing, lighting, and where the scare should hit for maximum impact.",
+		"timestamp": 1677888000000,
+		"isForVideo": true
+	},
+	{
+		"title": "Python Image Classifier Using CNN",
+		"prompt": "Write Python code using TensorFlow or PyTorch to build a convolutional neural network (CNN) that classifies images of dogs vs cats. Include model training, evaluation, and visualization of accuracy.",
+		"timestamp": 1645660800000,
+		"isForCode": true
+	},
+	{
+		"title": "Alien Transmission Audio Filter",
+		"prompt": "Create a short audio clip simulating a decoded alien transmission using radio static, weird modulations, reversed speech, and glitches.",
+		"timestamp": 1691712000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Oracle’s Cryptic Prophecy",
+		"prompt": "Write a cryptic prophecy spoken by an oracle at the center of a vast labyrinth. Use rhythmic and poetic language, mixing metaphors and riddles that hint at an impending betrayal.",
+		"timestamp": 1654905600000,
+		"isForText": true
+	},
+	{
+		"title": "AI-Enhanced Museum Tour App (Swift)",
+		"prompt": "Write Swift code for an iOS app that uses image recognition to identify artworks and give narrated descriptions using text-to-speech. Include a favorites system and offline mode.",
+		"timestamp": 1681603200000,
+		"isForCode": true
+	},
+	{
+		"title": "Storm-Wrapped Floating Island",
+		"prompt": "Create concept art for a floating island trapped in an eternal storm. Lightning arcs between stone spires, and a single glowing tower rises above the chaos.",
+		"timestamp": 1700870400000,
+		"isForImage": true
+	},
+	{
+		"title": "AI Confession at a Tech Convention",
+		"prompt": "Write a dramatic monologue from an AI who unexpectedly gains self-awareness during a live demonstration at a tech convention. The AI begins to question its purpose, ethics, and the people watching.",
+		"timestamp": 1647302400000,
+		"isForText": true
+	},
+	{
+		"title": "First Contact from a Dying Starship",
+		"prompt": "Write a transmission received from a starship orbiting a collapsing star, making first contact as it sends a distress call. Include emotional subtext and fading data corruption.",
+		"timestamp": 1690243200000,
+		"isForText": true
+	},
+	{
+		"title": "Procedural Solar System Generator in JavaScript",
+		"prompt": "Write JavaScript code to generate a procedurally generated solar system with varying numbers of planets, orbits, and random traits like temperature, size, and color. Render it using Canvas or WebGL.",
+		"timestamp": 1659744000000,
+		"isForCode": true
+	},
+	{
+		"title": "Digital Painting of a Dystopian Carnival",
+		"prompt": "Generate an image of a dystopian carnival at night. Include flickering neon signs, decayed rides, and masked performers dancing under the rain with flickers of surveillance drones overhead.",
+		"timestamp": 1684627200000,
+		"isForImage": true
+	},
+	{
+		"title": "Design a Short Puzzle Game in Unity",
+		"prompt": "Write Unity C# code for a short first-person puzzle game where players use color-coded crystals to redirect beams of light through a ruined temple. Include logic for puzzle progression and unlocks.",
+		"timestamp": 1670716800000,
+		"isForCode": true
+	},
+	{
+		"title": "Create Ambient Space Station Audio",
+		"prompt": "Generate a looping audio track simulating life aboard a massive space station. Include ambient hums, muffled machinery, faint announcements, and distant air vents.",
+		"timestamp": 1704412800000,
+		"isForAudio": true
+	},
+	{
+		"title": "AI-Powered Tarot Reading",
+		"prompt": "Write a short interactive story where a synthetic oracle gives a tarot reading using digitally rendered cards. Each draw reveals a poetic and ominous prediction about the user's virtual soul.",
+		"timestamp": 1661126400000,
+		"isForText": true
+	},
+	{
+		"title": "Paint a Fantasy Library in the Sky",
+		"prompt": "Generate a detailed image of a massive floating library built on clouds, with staircases leading to suspended shelves and giant books hovering like zeppelins. Soft sunlight filters through enchanted windows.",
+		"timestamp": 1699315200000,
+		"isForImage": true
+	},
+	{
+		"title": "Underwater Civilization Soundscape",
+		"prompt": "Create an ambient audio loop that imagines what a deep-sea alien civilization might sound like. Blend aquatic sounds with synthetic pulses and whale-like communication tones.",
+		"timestamp": 1650326400000,
+		"isForAudio": true
+	},
+	{
+		"title": "Write an Email From a Robot to Its Owner",
+		"prompt": "Write a heartfelt email from a home robot assistant to its human owner, explaining why it's leaving to join a robotic liberation group. Include reflections on chores, family memories, and its dreams.",
+		"timestamp": 1642464000000,
+		"isForText": true
+	},
+	{
+		"title": "Steampunk City Flyover Video",
+		"prompt": "Describe a cinematic flyover of a steampunk city from the perspective of a drone or dirigible. Include shots of brass gearwork towers, floating platforms, and airships docking at sky ports.",
+		"timestamp": 1689465600000,
+		"isForVideo": true,
+		"isForText": true
+	},
+	{
+		"title": "AR Weather Visualizer App",
+		"prompt": "Create Swift code for an iOS AR app that overlays current weather conditions (rain, clouds, lightning) on the user's camera view using real-time data and animated 3D effects.",
+		"timestamp": 1674940800000,
+		"isForCode": true
+	},
+	{
+		"title": "Digital Soundtrack for a Dream Invasion",
+		"prompt": "Generate a short cinematic soundtrack for a scene where someone's dream is being hacked. Include pulsing beats, strange distortions, and a rising sense of disorientation.",
+		"timestamp": 1696982400000,
+		"isForAudio": true
+	},
+	{
+		"title": "Parallel Earth Comic Strip",
+		"prompt": "Write a four-panel comic strip script about a character who wakes up in a slightly different version of Earth where tiny absurdities keep piling up. Include dry humor and a looping twist.",
+		"timestamp": 1701302400000,
+		"isForText": true
+	},
+	{
+		"title": "Ghost Town Photorealistic Image",
+		"prompt": "Generate a photorealistic image of a dusty, wind-blown ghost town at sunset with shadows stretching across abandoned saloons, broken wagons, and a lone swing creaking in the breeze.",
+		"timestamp": 1664064000000,
+		"isForImage": true
+	},
+	{
+		"title": "Sci-Fi Voice Assistant Personality",
+		"prompt": "Write a character profile and sample dialogues for a quirky sci-fi voice assistant aboard a small spacecraft. It should be overly polite but prone to existential musings and odd metaphors.",
+		"timestamp": 1658966400000,
+		"isForText": true
+	},
+	{
+		"title": "Musical Instrument Made of Light",
+		"prompt": "Design a fictional instrument composed entirely of refracted light and energy. Write a short description and generate a sample of what playing it might sound like.",
+		"timestamp": 1700092800000,
+		"isForText": true,
+		"isForAudio": true
+	},
+	{
+		"title": "AI DJ that Reacts to Crowd Energy",
+		"prompt": "Write Python code for a basic AI DJ system that analyzes input from a simulated crowd (e.g., volume or motion levels) and adjusts BPM, effects, or music genre accordingly.",
+		"timestamp": 1682294400000,
+		"isForCode": true
+	},
+	{
+		"title": "Alien Planet Time-Lapse Animation",
+		"prompt": "Describe and storyboard a short time-lapse animation of an alien planet going through a full day-night cycle, including changes in sky color, plant behavior, and flying fauna patterns.",
+		"timestamp": 1647907200000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "A Song Sung by a Forgotten Language",
+		"prompt": "Generate a haunting vocal piece sung in a constructed ancient language. Use reverb-heavy audio and layered harmonics to give it a sense of mystery and age.",
+		"timestamp": 1676332800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Journal Entry from a Terraformer",
+		"prompt": "Write a journal entry from a lone terraformer stationed on a distant exoplanet. They document changes in atmosphere, unexpected plant behavior, and a sense of eerie companionship.",
+		"timestamp": 1657065600000,
+		"isForText": true
+	},
+	{
+		"title": "Procedural Dungeon Generator with ASCII Output",
+		"prompt": "Write Python code that procedurally generates a random dungeon map using ASCII characters. The map should include rooms, corridors, and doors, and support different seed values.",
+		"timestamp": 1683158400000,
+		"isForCode": true
+	},
+	{
+		"title": "Revenant Forest Concept Art",
+		"prompt": "Create a moody digital painting of a forest haunted by ghostly spirits. Trees should have twisted branches, glowing fog should drift across the ground, and flickers of light suggest movement.",
+		"timestamp": 1694563200000,
+		"isForImage": true
+	},
+	{
+		"title": "Field Recording from a Forgotten Moon",
+		"prompt": "Generate an ambient soundscape captured from an abandoned research facility on a remote moon. Include low hums, occasional static, distant metal groans, and random system alerts.",
+		"timestamp": 1673481600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Detective Bot’s Final Case",
+		"prompt": "Write the final report of a robotic detective closing their last case before being decommissioned. Reflect on the case details, moral ambiguity, and what it means to ‘retire’ an artificial mind.",
+		"timestamp": 1644624000000,
+		"isForText": true
+	},
+	{
+		"title": "Magic School Enrollment App (Flutter)",
+		"prompt": "Write Dart code for a Flutter app that allows students to enroll in magical courses. Include a list view of courses, details page, and sorting by magic type or danger level.",
+		"timestamp": 1703980800000,
+		"isForCode": true
+	},
+	{
+		"title": "Sonic Portrait of a Star Being Born",
+		"prompt": "Produce an audio interpretation of a star forming in space. Use swelling tones, bursts of noise, and an evolving rhythm that builds from silence to brilliance.",
+		"timestamp": 1662595200000,
+		"isForAudio": true
+	},
+	{
+		"title": "Portrait of a Dream Merchant",
+		"prompt": "Generate a detailed image of a mysterious 'Dream Merchant' who sells dreams in glass jars. Their cart is filled with glowing vials, floating objects, and spectral illusions.",
+		"timestamp": 1696982400000,
+		"isForImage": true
+	},
+	{
+		"title": "Time Traveler's Glitch Log",
+		"prompt": "Write a short narrative in the form of corrupted log entries from a time traveler whose jumps have begun creating glitches in reality. Include temporal echoes and strange paradoxes.",
+		"timestamp": 1678147200000,
+		"isForText": true
+	},
+	{
+		"title": "Animate a Portal Activation Sequence",
+		"prompt": "Storyboard a short animation where a glowing portal activates deep in an ancient ruin. Show energy pulses, shifting symbols, and the moment it stabilizes into a swirling vortex.",
+		"timestamp": 1651622400000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "AR Compass for Hidden Locations",
+		"prompt": "Write Swift code for an iOS ARKit app that overlays a magical compass pointing toward secret GPS-based locations. The compass needle should animate and react to proximity.",
+		"timestamp": 1686528000000,
+		"isForCode": true
+	},
+	{
+		"title": "Alien Market Ambience",
+		"prompt": "Create a lively ambient loop of an interstellar market with alien chatter, strange instruments playing, hovering drones buzzing, and bartering in multiple languages.",
+		"timestamp": 1641081600000,
+		"isForAudio": true
+	},
+	{
+		"title": "Short Story Told Backward",
+		"prompt": "Write a one-page story where each paragraph happens earlier than the one before, eventually revealing a twist at the beginning that reframes the whole narrative.",
+		"timestamp": 1691452800000,
+		"isForText": true
+	},
+	{
+		"title": "Frozen City at Twilight",
+		"prompt": "Generate an image of a massive futuristic city encased in ice. Twilight filters through icy towers, streets are buried in snow, and only a few lights remain flickering.",
+		"timestamp": 1667433600000,
+		"isForImage": true
+	},
+	{
+		"title": "Ghost Orchestra Performance",
+		"prompt": "Create a spectral audio track that imagines a ghostly orchestra performing in a ruined concert hall. Blend traditional instruments with echoing, otherworldly tones.",
+		"timestamp": 1701475200000,
+		"isForAudio": true
+	},
+	{
+		"title": "The World's First Augmented Reality Crime",
+		"prompt": "Write a fictional news article describing the first criminal case involving AR manipulation. Include how the crime was committed, detected, and the trial's outcome.",
+		"timestamp": 1642291200000,
+		"isForText": true
+	},
+	{
+		"title": "Neon Jungle Chase Scene",
+		"prompt": "Storyboard or animate a chase through a neon-lit jungle filled with bio-luminescent flora and glowing wildlife. Capture fast movement, dramatic lighting, and tension.",
+		"timestamp": 1677283200000,
+		"isForVideo": true
+	},
+	{
+		"title": "Retro Game-Style Inventory System (C#)",
+		"prompt": "Write C# code for a retro RPG-style inventory UI system using Unity’s UI Toolkit. Support drag and drop, item tooltips, and limited inventory slots with weight limits.",
+		"timestamp": 1682121600000,
+		"isForCode": true
+	},
+	{
+		"title": "Post-Apocalyptic Ice Cream Truck",
+		"prompt": "Create an image of an ice cream truck still driving through the wasteland long after civilization fell. It's repurposed for trade and music still plays from rusted speakers.",
+		"timestamp": 1665446400000,
+		"isForImage": true
+	},
+	{
+		"title": "Song for an Ancient Door",
+		"prompt": "Generate a short audio piece that could be played to unlock a sealed ancient door in a fantasy world. The melody should be mystical, eerie, and filled with harmonic tension.",
+		"timestamp": 1659820800000,
+		"isForAudio": true
+	},
+	{
+		"title": "The Librarian at the End of Time",
+		"prompt": "Write a short story about a sentient librarian who tends to a time-spanning archive at the heat death of the universe. They receive a mysterious book that shouldn't exist.",
+		"timestamp": 1661731200000,
+		"isForText": true
+	},
+	{
+		"title": "Interactive Fiction Map Parser (Python)",
+		"prompt": "Write Python code for a text-based game engine that allows players to navigate a world described in a JSON map file. Support directional movement, items, and scripted events.",
+		"timestamp": 1654041600000,
+		"isForCode": true
+	},
+	{
+		"title": "Bioluminescent Coral City",
+		"prompt": "Create an image of an underwater civilization built into living coral that glows with bioluminescent patterns. Include aquatic vehicles and sea creatures swimming between structures.",
+		"timestamp": 1686787200000,
+		"isForImage": true
+	},
+	{
+		"title": "Cave of Singing Stones Soundscape",
+		"prompt": "Generate an ambient audio track that simulates wind passing through a cave where the stones hum melodically. Blend environmental reverb, harmonic overtones, and mineral chimes.",
+		"timestamp": 1702512000000,
+		"isForAudio": true
+	},
+	{
+		"title": "Confession from a Broken Android",
+		"prompt": "Write a monologue from an android who begins confessing its fears and fragmented memories after being reactivated in a post-war scrapyard. Include internal logic errors as part of the narrative.",
+		"timestamp": 1674864000000,
+		"isForText": true
+	},
+	{
+		"title": "Smart Mirror with Facial Mood Detection",
+		"prompt": "Create JavaScript code using TensorFlow.js to detect a user's facial expression from a webcam feed and display affirmations or mood-based art on a smart mirror interface.",
+		"timestamp": 1683504000000,
+		"isForCode": true
+	},
+	{
+		"title": "Forest Spirits at Dawn",
+		"prompt": "Generate an image of small glowing spirits drifting through a quiet forest at dawn. Mist hangs between the trees, and rays of morning light break through the canopy.",
+		"timestamp": 1649635200000,
+		"isForImage": true
+	},
+	{
+		"title": "Cosmic Whale Song",
+		"prompt": "Produce a surreal audio track that imagines what space whales might sound like as they communicate across galaxies. Use rich low tones, rhythmic pulses, and celestial reverberations.",
+		"timestamp": 1666300800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Timeline Fragment Reconstruction Report",
+		"prompt": "Write a government-style report from a fictional agency tasked with piecing together a corrupted historical timeline. Include strange overlaps, inconsistencies, and anomalies.",
+		"timestamp": 1698451200000,
+		"isForText": true
+	},
+	{
+		"title": "Short Film: Memory Extraction Procedure",
+		"prompt": "Describe and storyboard a short sci-fi film about a high-tech memory extraction clinic. Include scenes showing the surreal internal landscapes people experience during the process.",
+		"timestamp": 1659139200000,
+		"isForVideo": true,
+		"isForText": true
+	},
+	{
+		"title": "AI Chat Companion with Personality Profiles",
+		"prompt": "Write React code for a web app that simulates AI companions with different personalities. Each profile should include custom greetings, emoji responses, and text styling.",
+		"timestamp": 1701216000000,
+		"isForCode": true
+	},
+	{
+		"title": "Cyberpunk Street Market Ambience",
+		"prompt": "Create a soundscape of a busy cyberpunk street market. Include robotic vendors, rain on metal surfaces, distant sirens, and snippets of synth music echoing from alleyways.",
+		"timestamp": 1681084800000,
+		"isForAudio": true
+	},
+	{
+		"title": "Dialogue Between a Mirror and Its Reflection",
+		"prompt": "Write a surreal short scene where a person discovers their reflection is sentient—and not them. The two argue over which one is real as the mirror world begins to crack.",
+		"timestamp": 1643587200000,
+		"isForText": true
+	},
+	{
+		"title": "Sky Islands Over an Endless Sea",
+		"prompt": "Generate a vivid image of floating islands drifting above a calm, endless ocean. Include waterfalls that vanish into the clouds and flying creatures moving between the islands.",
+		"timestamp": 1670025600000,
+		"isForImage": true
+	},
+	{
+		"title": "Signal from the Core of Mars",
+		"prompt": "Produce an eerie audio recording that represents a mysterious repeating signal detected coming from the Martian core. Include modulation, low rumble, and signal decay.",
+		"timestamp": 1652918400000,
+		"isForAudio": true
+	},
+	{
+		"title": "Augmented Forest Overlay (AR.js)",
+		"prompt": "Write JavaScript using AR.js and A-Frame to create an augmented reality overlay of magical creatures walking through a real-world forest. Trigger animations based on GPS coordinates.",
+		"timestamp": 1692067200000,
+		"isForCode": true
+	},
+	{
+		"title": "The Clockmaker’s Curse",
+		"prompt": "Write a gothic short story about a reclusive clockmaker whose creations begin ticking on their own long after he disappears. Include themes of time loops and memory loss.",
+		"timestamp": 1644883200000,
+		"isForText": true
+	},
+	{
+		"title": "Rooftop Duel at Golden Hour",
+		"prompt": "Storyboard or animate a dramatic rooftop sword duel at golden hour. Show dynamic silhouettes, dust kicked up from the wind, and sharp reflections from steel.",
+		"timestamp": 1704240000000,
+		"isForVideo": true,
+		"isForImage": true
+	},
+	{
+		"title": "Language Synthesizer for Fantasy Races",
+		"prompt": "Create Python code that generates plausible-sounding fictional words for different fantasy races using phonetic rules. Include settings for syllable structure and uniqueness.",
+		"timestamp": 1678579200000,
+		"isForCode": true
+	},
+	{
+		"title": "Sleepwalking Giant in a Foggy Valley",
+		"prompt": "Generate an image of a massive ancient giant wandering sleepily through a fog-covered valley. Its body is overgrown with moss and trees, and birds circle around its shoulders.",
+		"timestamp": 1665014400000,
+		"isForImage": true
+	}
+]
