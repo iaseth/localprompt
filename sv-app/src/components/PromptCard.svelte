@@ -8,10 +8,11 @@
 
 	interface Props {
 		prompt: Prompt,
-		onedit: () => void
+		onedit: () => void,
+		ondelete: () => void
 	}
 
-	const { prompt, onedit }: Props = $props();
+	const { prompt, onedit, ondelete }: Props = $props();
 	const neverUpdated = prompt.createdAt === prompt.updatedAt;
 </script>
 
@@ -28,7 +29,7 @@
 			<IconButton tooltip="Edit" onclick={onedit}>
 				<EditIcon />
 			</IconButton>
-			<IconButton tooltip="Delete" onclick={() => copyToClipboard(prompt.prompt)}>
+			<IconButton tooltip="Delete" onclick={ondelete}>
 				<DeleteIcon />
 			</IconButton>
 		</footer>

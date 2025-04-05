@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp } from "$lib";
+	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePrompt } from "$lib";
 	import PromptCard from "../components/PromptCard.svelte";
 	import PromptEditor from "../components/PromptEditor.svelte";
 
@@ -20,6 +20,9 @@
 	const editPrompt = (uuidX: string) => {
 		uuid = uuidX;
 		openEditor();
+	};
+	const ondelete = (uuidX: string) => {
+		deletePrompt(uuidX).then(() => loadPrompts());
 	};
 
 	let prompts: Prompt[] = $state([]);
@@ -44,7 +47,8 @@
 
 	<section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 py-6">
 		{#each prompts as prompt (prompt.uuid) }
-			<PromptCard {prompt} onedit={() => editPrompt(prompt.uuid)} />
+			<PromptCard {prompt} onedit={() => editPrompt(prompt.uuid)}
+				ondelete={() => ondelete(prompt.uuid)} />
 		{/each}
 	</section>
 
