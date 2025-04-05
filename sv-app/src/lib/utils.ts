@@ -47,4 +47,12 @@ export function timeAgo (timestamp: number) {
 	if (months < 12) return `${months} month${months === 1 ? '' : 's'} ago`;
 	return `${years} year${years === 1 ? '' : 's'} ago`;
 }
-  
+
+export async function copyToClipboard (text: string) {
+	try {
+		await navigator.clipboard.writeText(text);
+		console.log("Text copied to clipboard!");
+	} catch (err) {
+		console.error("Failed to copy text:", err);
+	}
+}

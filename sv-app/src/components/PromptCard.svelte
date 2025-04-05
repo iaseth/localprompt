@@ -1,6 +1,8 @@
 
 <script lang="ts">
-	import { timeAgo, type Prompt } from "$lib";
+	import { copyToClipboard, timeAgo, type Prompt } from "$lib";
+	import CopyIcon from "../icons/CopyIcon.svelte";
+	import IconButton from "../ui/IconButton.svelte";
 
 	interface Props {
 		prompt: Prompt,
@@ -19,6 +21,10 @@
 
 		<footer class="card-actions justify-end">
 			<button class="btn btn-primary" onclick={onedit}>Edit</button>
+
+			<IconButton tooltip="Copy" onclick={() => copyToClipboard(prompt.prompt)}>
+				<CopyIcon />
+			</IconButton>
 		</footer>
 	</section>
 </article>
