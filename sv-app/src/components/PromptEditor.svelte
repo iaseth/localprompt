@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { addPromptToDB, getEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey, getPrompt } from "$lib";
+	import { addPromptToDB, createEmptyPrompt, Checkboxes, type Prompt, type PromptBooleanKey, getPromptFromDB } from "$lib";
 	import ToggleField from "../components/ToggleField.svelte";
 	import Debug from "./Debug.svelte";
 
@@ -10,10 +10,10 @@
 	}
 	const { uuid, closeEditor }: Props = $props();
 
-	let prompt: Prompt = $state(getEmptyPrompt());
+	let prompt: Prompt = $state(createEmptyPrompt());
 	let promptExists = $derived(prompt.createdAt != 0);
 	if (uuid) {
-		getPrompt(uuid).then(promptFound => {
+		getPromptFromDB(uuid).then(promptFound => {
 			if (promptFound) {
 				prompt = promptFound;
 			}

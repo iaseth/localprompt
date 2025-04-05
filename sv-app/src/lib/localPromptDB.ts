@@ -55,7 +55,7 @@ function generateUUID(): string {
 	return crypto.randomUUID();
 }
 
-export function getEmptyPrompt(): Prompt {
+export function createEmptyPrompt(): Prompt {
 	const prompt: Prompt = {
 		uuid: generateUUID(),
 		title: '',
@@ -122,7 +122,7 @@ export async function addPromptToDB(prompt: Prompt): Promise<void> {
 	db.close();
 }
 
-export async function getPrompt(uuid: string): Promise<Prompt | undefined> {
+export async function getPromptFromDB(uuid: string): Promise<Prompt | undefined> {
 	const db = await openDB();
 	const tx = db.transaction(STORE_NAME, 'readonly');
 	const store = tx.objectStore(STORE_NAME);
@@ -189,7 +189,7 @@ export async function getPromptsInRange(from: number, to: number): Promise<Promp
 	return prompts;
 }
 
-export async function deletePrompt(uuid: string): Promise<void> {
+export async function deletePromptFromDB(uuid: string): Promise<void> {
 	const db = await openDB();
 	const tx = db.transaction(STORE_NAME, 'readwrite');
 	const store = tx.objectStore(STORE_NAME);
@@ -201,7 +201,7 @@ export async function deletePrompt(uuid: string): Promise<void> {
 	db.close();
 }
 
-async function updatePrompt(prompt: Prompt): Promise<void> {
+async function updatePromptInDB(prompt: Prompt): Promise<void> {
 	const db = await openDB();
 	const tx = db.transaction(STORE_NAME, 'readwrite');
 	const store = tx.objectStore(STORE_NAME);
@@ -213,14 +213,14 @@ async function updatePrompt(prompt: Prompt): Promise<void> {
 	db.close();
 }
 
-export async function toggleProp(uuid: string, prop: PromptBooleanKey): Promise<void> {
-	const prompt = await getPrompt(uuid);
+export async function togglePromptPropInDB(uuid: string, prop: PromptBooleanKey): Promise<void> {
+	const prompt = await getPromptFromDB(uuid);
 	if (!prompt) return;
 
 	prompt[prop] = !prompt[prop];
 	prompt.updatedAt = Date.now();
-	await updatePrompt(prompt);
+	await updatePromptInDB(prompt);
 }
 
-export const toggleFavorite = (uuid: string) => toggleProp(uuid, 'isFavorite');
-export const toggleHidden = (uuid: string) => toggleProp(uuid, 'isHidden');
+export const toggleFavorite = (uuid: string) => togglePromptPropInDB(uuid, 'isFavorite');
+export const toggleHidden = (uuid: string) => togglePromptPropInDB(uuid, 'isHidden');

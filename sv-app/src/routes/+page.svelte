@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePrompt, getEmptyPrompt, addPromptToDB } from "$lib";
+	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePromptFromDB, createEmptyPrompt, addPromptToDB } from "$lib";
 	import PromptCard from "../components/PromptCard.svelte";
 	import PromptEditor from "../components/PromptEditor.svelte";
 
@@ -22,7 +22,7 @@
 		openEditor();
 	};
 	const ondelete = (uuidX: string) => {
-		deletePrompt(uuidX).then(() => loadPrompts());
+		deletePromptFromDB(uuidX).then(() => loadPrompts());
 	};
 
 	let prompts: Prompt[] = $state([]);
@@ -51,7 +51,7 @@
 			.then(res => res.json())
 			.then(async (examplePrompts: ExamplePrompt[]) => {
 			for (const examplePrompt of examplePrompts) {
-				let newPrompt = getEmptyPrompt();
+				let newPrompt = createEmptyPrompt();
 				newPrompt.title = examplePrompt.title;
 				newPrompt.prompt = examplePrompt.prompt;
 
