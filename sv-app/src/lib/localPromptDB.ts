@@ -53,6 +53,17 @@ function openDB(): Promise<IDBDatabase> {
 	});
 }
 
+export function deleteDatabase (): Promise<void> {
+	return new Promise((resolve, reject) => {
+		const request = indexedDB.deleteDatabase(DB_NAME);
+		request.onsuccess = () => resolve();
+		request.onerror = () => reject(request.error);
+		request.onblocked = () => {
+			console.warn('deleteDatabase was blocked. Close all tabs using the DB and try again.');
+		};
+	});
+}
+
 function generateUUID(): string {
 	return crypto.randomUUID();
 }

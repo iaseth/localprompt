@@ -1,6 +1,7 @@
 
 <script lang="ts">
-	import { type Prompt, deletePromptFromDB, createEmptyPrompt, addPromptToDB, getLatestUpdatedPrompts } from "$lib";
+	import { type Prompt, deletePromptFromDB, createEmptyPrompt, addPromptToDB, getLatestUpdatedPrompts, deleteDatabase } from "$lib";
+	import Debug from "../components/Debug.svelte";
 	import PromptCard from "../components/PromptCard.svelte";
 	import PromptEditor from "../components/PromptEditor.svelte";
 
@@ -66,6 +67,11 @@
 		});
 	}
 
+	function deleteEverything () {
+		deleteDatabase();
+		prompts = [];
+	}
+
 	$effect(() => {
 		loadPrompts();
 	});
@@ -84,8 +90,12 @@
 
 		<section class="flex flex-wrap gap-3 py-6">
 			<button class="btn btn-primary" onclick={addPrompt}>Add</button>
-			<button class="btn btn-secondary" onclick={loadPrompts}>Load</button>
-			<button class="btn btn-secondary" onclick={populateExamplePrompts}>Populate</button>
+
+			<Debug>
+				<button class="btn btn-secondary" onclick={loadPrompts}>Load</button>
+				<button class="btn btn-secondary" onclick={populateExamplePrompts}>Populate</button>
+				<button class="btn btn-secondary" onclick={deleteEverything}>Delete</button>
+			</Debug>
 		</section>
 
 		<section class="grow"></section>
