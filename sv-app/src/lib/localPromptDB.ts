@@ -24,12 +24,13 @@ export interface Prompt {
 	isGoat: boolean;
 	isNsfw: boolean;
 	isHidden: boolean;
+	isDummy: boolean;
 }
 
 export type PromptBooleanKey = keyof Pick<
 	Prompt, 'isForText' | 'isForCode' | 'isForImage' | 'isForVideo' | 'isForAudio'
 		| 'isForChatgpt' | 'isForClaude' | 'isForDeepseek' | 'isForGemini' | 'isForGrok'
-		| 'isFavorite' | 'isGoat' | 'isNsfw' | 'isHidden'
+		| 'isFavorite' | 'isGoat' | 'isNsfw' | 'isHidden' | 'isDummy'
 >
 
 const DB_NAME = 'LocalPromptDB';
@@ -79,7 +80,8 @@ export function createEmptyPrompt(): Prompt {
 		isFavorite: false,
 		isGoat: false,
 		isNsfw: false,
-		isHidden: false
+		isHidden: false,
+		isDummy: false
 	};
 	return prompt;
 }

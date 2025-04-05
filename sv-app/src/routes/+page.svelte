@@ -57,6 +57,7 @@
 
 				newPrompt.createdAt = examplePrompt.timestamp;
 				newPrompt.updatedAt = examplePrompt.timestamp;
+				newPrompt.isDummy = true;
 
 				newPrompt.isForText = examplePrompt.isForText || false;
 				newPrompt.isForCode = examplePrompt.isForCode || false;
