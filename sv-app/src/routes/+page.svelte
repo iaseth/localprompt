@@ -65,6 +65,10 @@
 			}
 		});
 	}
+
+	$effect(() => {
+		loadPrompts();
+	});
 </script>
 
 <svelte:head>
@@ -72,10 +76,10 @@
 </svelte:head>
 
 <section class="h-screen w-full overflow-hidden flex">
-	<aside class="w-64 h-full overflow-y-auto bg-base-200 px-3 py-6">
-		<header class="prose text-center py-4">
-			<h4>LocalPrompt</h4>
-			<p>Never lose a prompt again!</p>
+	<aside class="w-64 h-full overflow-y-auto bg-base-300 px-3 py-6 flex flex-col">
+		<header class="prose text-center py-6">
+			<h3>LocalPrompt</h3>
+			<p class="-mt-2 text-sm">Home of Good Prompts!</p>
 		</header>
 
 		<section class="flex flex-wrap gap-3 py-6">
@@ -83,6 +87,12 @@
 			<button class="btn btn-secondary" onclick={loadPrompts}>Load</button>
 			<button class="btn btn-secondary" onclick={populateExamplePrompts}>Populate</button>
 		</section>
+
+		<section class="grow"></section>
+
+		<footer class="text-center">
+			<a class="link" href="https://github.com/iaseth/localprompt">GitHub</a>
+		</footer>
 	</aside>
 
 	<main class="flex-1 h-full overflow-y-auto">

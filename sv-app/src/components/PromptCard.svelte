@@ -16,7 +16,7 @@
 	const neverUpdated = prompt.createdAt === prompt.updatedAt;
 </script>
 
-<article class="card bg-base-200 shadow-sm">
+<article class="card bg-base-300 shadow-sm">
 	<section class="card-body">
 		<h2 class="card-title">{prompt.title}</h2>
 		<p>{prompt.prompt}</p>

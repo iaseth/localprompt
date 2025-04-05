@@ -11,7 +11,7 @@
 </script>
 
 <div class="tooltip" data-tip={tooltip}>
-	<button {onclick} class="btn">
+	<button {onclick} class="btn bg-base-100">
 		{@render children()}
 	</button>
 </div>
