@@ -39,14 +39,21 @@
 	const onCancel = () => closeEditor(false);
 </script>
 
-<section class="prose prose-xl mx-auto bg-zinc-950 px-3 sm:px-6 pt-2 pb-8 rounded-md shadow">
+<section class="prose prose-lg mx-auto bg-base-100 px-3 sm:px-6 pt-2 pb-8 rounded-md shadow">
 	<header class="pb-4">
 		<h4 class="text-center">Add Prompt</h4>
 	</header>
 
 	<section class="space-y-6">
-		<input class="input input-primary text-lg w-full" type="text" bind:value={prompt.title} />
-		<textarea class="textarea textarea-primary block w-full" rows=10 bind:value={prompt.prompt}></textarea>
+		<fieldset class="fieldset">
+			<legend class="fieldset-legend">Give it a Title</legend>
+			<input type="text" class="input w-full" placeholder="Type here" bind:value={prompt.title} />
+		</fieldset>
+
+		<fieldset class="fieldset">
+			<legend class="fieldset-legend">Add the Prompt</legend>
+			<textarea class="textarea h-48 w-full" placeholder="Prompt" bind:value={prompt.prompt}></textarea>
+		</fieldset>
 
 		<fieldset class="fieldset grid grid-cols-2 md:grid-cols-3 gap-3 p-4 bg-base-100 border border-base-300 rounded-box">
 			<legend class="fieldset-legend">Toggles</legend>
