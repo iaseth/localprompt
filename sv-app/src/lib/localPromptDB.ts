@@ -47,6 +47,7 @@ function openDB(): Promise<IDBDatabase> {
 			if (!db.objectStoreNames.contains(STORE_NAME)) {
 				const store = db.createObjectStore(STORE_NAME, { keyPath: 'uuid' });
 				store.createIndex('createdAt', 'createdAt', { unique: false });
+				store.createIndex('updatedAt', 'updatedAt', { unique: false });
 			}
 		};
 	});
@@ -109,7 +110,7 @@ export async function addPromptToDB(prompt: Prompt): Promise<void> {
 	prompt = { ...prompt };
 	const now = Date.now();
 	prompt.createdAt = prompt.createdAt || now;
-	prompt.updatedAt = now;
+	prompt.updatedAt = prompt.isDummy ? prompt.createdAt : now;
 
 	const db = await openDB();
 	const tx = db.transaction(STORE_NAME, 'readwrite');
@@ -178,6 +179,32 @@ export async function getPromptsInRange(from: number, to: number): Promise<Promp
 		request.onsuccess = () => {
 			const cursor = request.result;
 			if (cursor) {
+				prompts.push(cursor.value);
+				cursor.continue();
+			} else {
+				resolve();
+			}
+		};
+		request.onerror = () => reject(request.error);
+	});
+
+	db.close();
+	return prompts;
+}
+
+export async function getLatestUpdatedPrompts(n: number): Promise<Prompt[]> {
+	const db = await openDB();
+	const tx = db.transaction(STORE_NAME, 'readonly');
+	const store = tx.objectStore(STORE_NAME);
+	const index = store.index('updatedAt');
+
+	const prompts: Prompt[] = [];
+
+	await new Promise<void>((resolve, reject) => {
+		const request = index.openCursor(null, 'prev'); // DESC order
+		request.onsuccess = () => {
+			const cursor = request.result;
+			if (cursor && prompts.length < n) {
 				prompts.push(cursor.value);
 				cursor.continue();
 			} else {

@@ -1,6 +1,6 @@
 
 <script lang="ts">
-	import { getPromptsInRange, getCurrentTimestamp, type Prompt, getLastSundayTimestamp, deletePromptFromDB, createEmptyPrompt, addPromptToDB } from "$lib";
+	import { type Prompt, deletePromptFromDB, createEmptyPrompt, addPromptToDB, getLatestUpdatedPrompts } from "$lib";
 	import PromptCard from "../components/PromptCard.svelte";
 	import PromptEditor from "../components/PromptEditor.svelte";
 
@@ -26,12 +26,8 @@
 	};
 
 	let prompts: Prompt[] = $state([]);
-	const toTimestamp = getCurrentTimestamp();
-	const fromSundayTimestamp = getLastSundayTimestamp();
-
 	function loadPrompts () {
-		const to = getCurrentTimestamp();
-		getPromptsInRange(fromSundayTimestamp, to).then(matchingPrompts => {
+		getLatestUpdatedPrompts(20).then(matchingPrompts => {
 			prompts = matchingPrompts.sort((a, b) => b.updatedAt - a.updatedAt);
 		});
 	}
